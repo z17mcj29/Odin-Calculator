@@ -1,6 +1,19 @@
 const display = document.querySelector("#calcdisplay");
 
 display.textContent = "This is a test";
+let displayText = [];
+let viewText = '';
+
+function updateDisplay(val){
+    displayText.push(val);    
+    console.log(displayText)
+    viewText = displayText.join('');
+    display.textContent = viewText;
+}
+//  I need to convert the array to a string for the display.
+
+   
+    
 
 
 function add(a, b){
