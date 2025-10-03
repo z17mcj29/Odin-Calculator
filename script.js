@@ -1,3 +1,8 @@
+const display = document.querySelector("#calcdisplay");
+
+display.textContent = "This is a test";
+
+
 function add(a, b){
     return a + b;
 }
@@ -23,3 +28,4 @@ console.log(operate(5,7,add));
 console.log(operate(8,4,subtract));
 console.log(operate(3,9, multiply));
 console.log(operate(12,3,divide));
+
